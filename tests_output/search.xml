@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="2">
+
+  <testsuite name="search"
+    errors="2" failures="0" hostname="" id="" package="search" skipped="0"
+    tests="2" time="0.1870" timestamp="Thu, 21 Mar 2019 02:14:25 GMT">
+  
+    <testcase name="Search" classname="search" time="0.1550" assertions="0">
+    </testcase>
+  
+    <testcase name="Search for an unavailable listing" classname="search" time="0.03200" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Search / Search]:
+
+  Error: listingItem was not found in &#34;yoodlizePage&#34;. Available elements: titleText,graphicText,searchField,searchButton,listingImage,listItem,noResults,searchItem,messages,listStuff,profile,logIn,signIn,dashboard,myListings,reviews,reservations,editProfile,accountSettings,logOut,logInButton,notifications
+    at getElement (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\page-object\command-wrapper.js:13:13)
+    at Object.element (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\page-object\command-wrapper.js:81:32)
+    at Page.search (C:\Users\Thomas\DevMountain\Yoodlize\pageObjects\yoodlizePage.js:6:17)
+    at Object.Search (C:\Users\Thomas\DevMountain\Yoodlize\tests\search.js:11:21)
+    at Module.call (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+  Error while running [Search / Search for an unavailable listing]:
+
+  Error: tryAgainButton was not found in &#34;yoodlizePage&#34;. Available elements: titleText,graphicText,searchField,searchButton,listingImage,listItem,noResults,searchItem,messages,listStuff,profile,logIn,signIn,dashboard,myListings,reviews,reservations,editProfile,accountSettings,logOut,logInButton,notifications
+    at getElement (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\page-object\command-wrapper.js:13:13)
+    at Object.element (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\page-object\command-wrapper.js:81:32)
+    at Object.Search for an unavailable listing (C:\Users\Thomas\DevMountain\Yoodlize\tests\search.js:18:17)
+    at Module.call (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
