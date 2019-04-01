@@ -81,16 +81,16 @@ var yoodlizeCommands = {
         .expect.element('@listingItem').text.to.equal(searchResults).before(5000)
         return this
     },
-    searchByCity: function (searchCity, searchResults) {
+    searchByCity: function (cityInfo, cityResults) {
     // search listing by City
         this
         .click('@searchLink')
         .waitForElementPresent('@enterCity', 5000)
-        .setValue('@enterCity', searchCity)
+        .setValue('@enterCity', cityInfo)
         .waitForElementPresent('@cityOption', 5000)
         .click('@cityOption')
         .click('@searchButton')
-        .expect.element('@listingItem').text.to.equal(searchResults).before(5000)
+        .expect.element('@listingItem').text.to.equal(cityResults).before(5000)
         return this
     },
 }
@@ -122,7 +122,7 @@ module.exports = {
         profileDropDown: '#basic-nav-dropdown',
         inbox: '//div[text()="Inbox"]',
         myListings: '//div[text()="myListings"]',
-        categorySearch: 'div[class="sc-kaNhvL kwEqLx"]',
+        categoryResults: 'div[class="sc-kaNhvL kwEqLx"]',
         listYourItem: {
             selector: '//span[text()="List an Item"]',
             locateStrategy: 'xpath'
@@ -183,6 +183,66 @@ module.exports = {
         logInButton: 'button[type="submit"]',
         notifications: {
             selector: '//*[contains(text(), "Notifications")]',
+            locateStrategy: 'xpath'
+        },
+        tools: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[1]',
+            locateStrategy: 'xpath'
+        },
+        outdoorGear: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[2]',
+            locateStrategy: 'xpath'
+        },
+        electronics: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[3]',
+            locateStrategy: 'xpath'
+        },
+        partyEquipment: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[4]',
+            locateStrategy: 'xpath'
+        },
+        recreationalVehicles: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[5]',
+            locateStrategy: 'xpath'
+        },
+        clothing: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[6]',
+            locateStrategy: 'xpath'
+        },
+        homeKitchen: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[7]',
+            locateStrategy: 'xpath'
+        },
+        toysGames: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[8]',
+            locateStrategy: 'xpath'
+        },
+        lawnGarden: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[9]',
+            locateStrategy: 'xpath'
+        },
+        sportingGoods: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[10]',
+            locateStrategy: 'xpath'
+        },
+        businessEquipment: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[11]',
+            locateStrategy: 'xpath'
+        },
+        venues: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[12]',
+            locateStrategy: 'xpath'
+        },
+        localExperts: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[13]',
+            locateStrategy: 'xpath'
+        },
+        experiences: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[14]',
+            locateStrategy: 'xpath'
+        },
+        misc: {
+            selector: '(//div[@class="sc-jqCOkK hjfIlr sc-gqjmRU fptSCa"])[15]',
             locateStrategy: 'xpath'
         },
     }

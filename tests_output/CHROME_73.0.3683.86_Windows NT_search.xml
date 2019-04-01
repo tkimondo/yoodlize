@@ -1,46 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
+<testsuites errors="0"
             failures="0"
             tests="3">
 
   <testsuite name="search"
-    errors="1" failures="0" hostname="" id="" package="search" skipped="0"
-    tests="3" time="54.08" timestamp="Mon, 25 Mar 2019 06:20:39 GMT">
+    errors="0" failures="0" hostname="" id="" package="search" skipped="0"
+    tests="3" time="96.16" timestamp="Mon, 01 Apr 2019 06:05:48 GMT">
   
-    <testcase name="Search" classname="search" time="42.36" assertions="2">
+    <testcase name="Search" classname="search" time="15.62" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Search for an unavailable listing" classname="search" time="11.41" assertions="2">
+    <testcase name="Search for an unavailable listing" classname="search" time="5.195" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Search by category" classname="search" time="0.3080" assertions="0">
+    <testcase name="Search by category" classname="search" time="75.35" assertions="31">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
     </testcase>
   
 
-  
-    <system-err>
-        Error while running [Search / Search by category]:
-
-  TypeError: pageObject.clickCategory is not a function
-    at module.exports (C:\Users\Thomas\DevMountain\Yoodlize\functions\browseCategories.js:3:10)
-    at Search by category.categoriesList.forEach.category (C:\Users\Thomas\DevMountain\Yoodlize\tests\search.js:24:13)
-    at Array.forEach (&lt;anonymous&gt;)
-    at Object.Search by category (C:\Users\Thomas\DevMountain\Yoodlize\tests\search.js:23:24)
-    at Module.call (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Thomas\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
-    </system-err>
   
 
   
