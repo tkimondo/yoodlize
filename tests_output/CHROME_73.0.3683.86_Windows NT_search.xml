@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
-            tests="3">
+            failures="2"
+            tests="4">
 
   <testsuite name="search"
-    errors="0" failures="0" hostname="" id="" package="search" skipped="0"
-    tests="3" time="96.16" timestamp="Mon, 01 Apr 2019 06:05:48 GMT">
+    errors="0" failures="2" hostname="" id="" package="search" skipped="0"
+    tests="4" time="92.15" timestamp="Wed, 03 Apr 2019 05:28:53 GMT">
   
-    <testcase name="Search" classname="search" time="15.62" assertions="2">
+    <testcase name="Search for available listing " classname="search" time="15.46" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Search for an unavailable listing" classname="search" time="5.195" assertions="2">
+    <testcase name="Search for an unavailable listing" classname="search" time="5.797" assertions="2">
 
     
 
     
     </testcase>
   
-    <testcase name="Search by category" classname="search" time="75.35" assertions="31">
+    <testcase name="Search by category" classname="search" time="50.18" assertions="28">
 
     
 
@@ -75,13 +75,18 @@
 
     
 
-    
+      <failure message="Expected element &lt;div[class=&#34;sc-kaNhvL kwEqLx&#34;]&gt; text to contain: &#34;Lawn and Garden&#34;">    at module.exports (C:\Users\Thomas\DevMountain\yoodlize\testAssets\browseCategories.js:6:17)
+    at Search by category.categoriesList.forEach.category (C:\Users\Thomas\DevMountain\yoodlize\tests\search.js:24:13)
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Search by category (C:\Users\Thomas\DevMountain\yoodlize\tests\search.js:23:24)</failure>
 
     
+    </testcase>
+  
+    <testcase name="Search By City" classname="search" time="20.71" assertions="2">
 
-    
-
-    
+      <failure message="Timed out while waiting for element &lt;input[class=&#34;geosuggest__input&#34;]&gt; to be present for 5000 milliseconds.">    at Page.searchByCity (C:\Users\Thomas\DevMountain\yoodlize\pageObjects\yoodlizePage.js:77:10)
+    at Object.Search By City (C:\Users\Thomas\DevMountain\yoodlize\tests\search.js:28:21)</failure>
 
     
     </testcase>

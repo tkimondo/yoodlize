@@ -69,18 +69,7 @@ var yoodlizeCommands = {
         .expect.element('@noResults').text.to.equal(noListing).before(5000)
         return this
     },
-    searchByCategory: function (searchCategory, categoryResults) {
-    // search listing by category
-        this
-        .click('@searchLink')
-        .waitForElementPresent('@enterCity', 5000)
-        .setValue('@enterCity', searchCity)
-        .waitForElementPresent('@cityOption', 5000)
-        .click('@cityOption')
-        .click('@searchButton')
-        .expect.element('@listingItem').text.to.equal(searchResults).before(5000)
-        return this
-    },
+
     searchByCity: function (cityInfo, cityResults) {
     // search listing by City
         this
@@ -89,7 +78,8 @@ var yoodlizeCommands = {
         .setValue('@enterCity', cityInfo)
         .waitForElementPresent('@cityOption', 5000)
         .click('@cityOption')
-        .click('@searchButton')
+        this.api.pause(500)
+        this.click('@searchButton')
         .expect.element('@listingItem').text.to.equal(cityResults).before(5000)
         return this
     },
@@ -123,6 +113,7 @@ module.exports = {
         inbox: '//div[text()="Inbox"]',
         myListings: '//div[text()="myListings"]',
         categoryResults: 'div[class="sc-kaNhvL kwEqLx"]',
+        browseCategories: 'div[class="sc-jqCOkK dXQQRx sc-gqjmRU fptSCa"]',
         listYourItem: {
             selector: '//span[text()="List an Item"]',
             locateStrategy: 'xpath'
